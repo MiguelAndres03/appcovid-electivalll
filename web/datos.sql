@@ -34,3 +34,17 @@ CREATE TABLE public.datos
     "Correo" text COLLATE pg_catalog."default",
     CONSTRAINT datos_pkey PRIMARY KEY ("Cedula")
 )
+
+CREATE TABLE public.sintomas
+(
+    sintoma1 text COLLATE pg_catalog."default",
+    sintoma2 text COLLATE pg_catalog."default",
+    sintoma3 text COLLATE pg_catalog."default",
+    sintoma4 text COLLATE pg_catalog."default",
+    sintoma5 text COLLATE pg_catalog."default"
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public.sintomas
+    OWNER to postgres;
