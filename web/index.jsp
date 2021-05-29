@@ -146,6 +146,7 @@
             <input class="controls" type="text" name="cedula"  onkeypress="return numeros(event) "> <br>
             <p>Correo electrónico</p>
             <input class="controls" type="email" name="correo"> <br>
+           
                 
            
             <input class="boton" type="submit" value="Enviar">

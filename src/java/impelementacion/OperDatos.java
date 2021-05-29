@@ -45,9 +45,7 @@ public class OperDatos implements Operaciones<Datos>
 
             Statement st = connection.createStatement();
             ResultSet rs = st.executeQuery(sql);
-            System.out.print(rs.getCursorName()+"____________");
-            
-           
+                  
                while (rs.next()) {                   
                   String data = " ";
                   int n = rs.getMetaData().getColumnCount();
@@ -60,9 +58,7 @@ public class OperDatos implements Operaciones<Datos>
         } catch (SQLException ex) {
             Logger.getLogger(OperDatos.class.getName()).log(Level.SEVERE, null, ex);
 
-        }
-           
-           
+        } 
            //
            try {
                PreparedStatement ps = connection.prepareStatement("INSERT INTO public.datos(nombre, apellido, cedula, correo) VALUES (?, ?, ?, ?);");

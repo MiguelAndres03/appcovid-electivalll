@@ -16,6 +16,7 @@ public class Datos
     private String cedula;
     private String correo;
 
+
     public String getSintoma1() {
         return sintoma1;
     }
@@ -107,5 +108,5 @@ public class Datos
     public void setCorreo(String correo) {
         this.correo = correo;
     }
-
+    
 }
